@@ -6,10 +6,11 @@
  
   <title>Mi aplicacion</title>
 
-  <!--grupo CSS-->  <link rel="stylesheet" href="css/extra.css"/> 
+  <!--grupo CSS-->
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
-  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/extra.css"/> 
   <link rel="stylesheet" href="css/setso.css" />
         
         
@@ -29,10 +30,18 @@
   <div data-role="header">
     <h1>Juego Colores :v</h1>
   </div>
+  
+  <div id="jugador">
+  <!-- aquie esta el div jugador-->
+  </div>
 
-  <div data-role="main" class="ui-content" align="center">
-   <a href="#pagina2"  id="btnjugar" data-transition="flip" class="ui-btn ui-icon-check ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline">Jugar</a>
-</div>
+  <div data-role="main" class="ui-content">
+   <div align="center">
+    <div data-role="controlgroup" style="width:50%" data-type="vertical">
+   <a href="#tablero" id="btnjugar" class="ui-btn ui-shadow ui-btn-icon-right ui-corner-all" data-transition="fade">Jugar</a>
+  </div>
+  </div>
+  </div>
 
   <div data-role="footer">
     <h1>@Raul Manzano xP</h1>
@@ -40,25 +49,24 @@
  </div>  
  <!-- Principal -->
  
-  <!-- Pagina2 -->
- <div data-role="page" id="pagina2" >   
-  <div data-role="header">
-   </div>
-
- <div data-role="main" class="ui-content">
+ 
+ <!-- Pagina02 -->
+ <div data-role="page" id="tablero" >   
+   <div data-role="main" class="ui-content">
+ 
   <div id="B1" style="background-color:#6FF; width:50%; float:left;" class="cuadro"> &nbsp; </div>
   <div id="B2" style="background-color:#6F0; width:50%; float:left;" class="cuadro"> &nbsp; </div>
   <div id="B3" style="background-color:#FF6; width:50%; float:left;" class="cuadro"> &nbsp; </div>
   <div id="B4" style="background-color:#F03; width:50%; float:left;" class="cuadro"> &nbsp; </div>
   
-   
-  </div>
+</div>
 
   <div data-role="footer" data-position="fixed">
-  <H3> <div  id="pantalla" >Pulsele...:V</div> </H3>
+  <h3> <div id="pantalla"> Pulsele...:V</div></h3>
   </div>
  </div>  
- <!-- Pagina2 -->
+ <!-- Pagina02 -->
+
 
  </body>
 </html> 
